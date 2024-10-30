@@ -1,0 +1,13 @@
+{
+  "name": "chess-platform",
+  "version": "1.0.0",
+  "description": "A full-featured chess platform inspired by Lichess",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
